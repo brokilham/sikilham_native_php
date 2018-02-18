@@ -20,6 +20,10 @@ class ComposerStaticInit6963765145d061cb27e6679d86444965
         array (
             'Carbon\\' => 7,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -35,6 +39,14 @@ class ComposerStaticInit6963765145d061cb27e6679d86444965
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
+    );
+
+    public static $classMap = array (
+        'AppController' => __DIR__ . '/../..' . '/app/controllers/AppController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -42,6 +54,7 @@ class ComposerStaticInit6963765145d061cb27e6679d86444965
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit6963765145d061cb27e6679d86444965::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit6963765145d061cb27e6679d86444965::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6963765145d061cb27e6679d86444965::$classMap;
 
         }, null, ClassLoader::class);
     }

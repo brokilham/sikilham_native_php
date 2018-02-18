@@ -5,5 +5,13 @@
     "minimum-stability": "dev",
     "require": {
         "nesbot/carbon": "^1.23@dev"
+    },
+    "autoload": {
+        "classmap":[
+            "app/controllers"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
     }
 }
