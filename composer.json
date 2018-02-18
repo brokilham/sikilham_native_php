@@ -1,0 +1,7 @@
+{
+    "name": "sikilham_native_php/ilham",
+    "description": "belajar native php mengunakan composer",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
