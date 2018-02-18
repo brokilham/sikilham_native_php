@@ -3,5 +3,7 @@
     "description": "belajar native php mengunakan composer",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "nesbot/carbon": "^1.23@dev"
+    }
 }
